@@ -1,0 +1,145 @@
+@media (max-width: 992px){
+    
+    h1{
+        font-size: 1.5rem;
+    }
+    h2,h3,h4{
+        font-size: 1.3rem;
+    }
+
+    h5,h6{
+        font-size: 1.2rem;
+    }
+
+    p,a,li,ul{
+        font-size: 1rem;
+    }
+
+    .welcome-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+       
+    }
+
+     img{
+        width: 80% !important;
+        margin: 1rem auto;
+    }
+
+    .dream-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-flow: column-reverse;
+        text-align: center;
+    }
+
+    .dream-left{
+        width: 100%;
+    }
+    .dream-right{
+        width: 100%;
+    }
+
+    .experience-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .ex-head{
+        font-size: 1.5rem;
+        
+    }
+
+    .ex-box {
+        width: 80%;
+        margin:  1rem auto;
+    }
+
+    .ex-right{
+        height: auto;
+    }
+
+}
+
+
+
+@media (max-width: 768px){
+    
+    h1{
+        font-size: 1.3rem;
+    }
+    h2,h3,h4{
+        font-size: 1.1rem;
+    }
+
+    h5,h6{
+        font-size: 1rem;
+    }
+
+    p,a,li,ul{
+        font-size: 13px;
+    }
+
+    .title{
+        font-size: 2.5rem;
+    }
+
+    .welcome-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .welcome-left{
+        margin-bottom: 1rem;
+    }
+
+    img{
+        width: 70% !important;
+    }
+    .dream-title{
+        font-size: 2.5rem;
+    }
+    .dream-area{
+        padding:  0rem 0rem;
+    }
+}
+
+
+
+@media (max-width: 576px){
+    
+
+    .welcome-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+       
+    }
+
+    .title{
+        font-size: 2rem;
+    }
+    .dream-title{
+        font-size: 2rem;
+    }
+
+    .ex-head{
+        font-size: 1.2rem;
+    }
+
+    button{
+        font-size: 10px;
+    }
+}

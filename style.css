@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 2rem;
+}
+h2,h3,h4{
+    font-size: 1.5rem;
+}
+
+h5,h6{
+    font-size: 1.2rem;
+}
+
+p,a,li,ul{
+    font-size: 1rem;
+}
+
+img{
+    width: 100%;
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+
+:root{
+    --primary : orange;
+    --secondary : #111111;
+    --text : dimgray;
+}
+
+
+button{
+    background: linear-gradient(45deg, lightsalmon, tomato);
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    transition: all 0.4s ease-in;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+button:hover{
+    background: linear-gradient(45deg, tomato , lightsalmon);
+}
+
+
+/* Welcome Area */
+.welcome-area{
+    background: url(images/top-banner.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.welcome-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.welcome-left{
+    width: 80%;
+    animation-name: fadeInLeft;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInLeft {
+            0% {
+            opacity: 0;
+            transform: translate3d(-100%, 0, 0);
+            }
+            100% {
+            opacity: 1;
+            transform: none;
+            }
+            }
+            @keyframes fadeInLeft {
+            0% {
+            opacity: 0;
+            transform: translate3d(-100%, 0, 0);
+            }
+            100% {
+            opacity: 1;
+            transform: none;
+            }
+    } 
+
+
+
+.title{
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin:  1.5rem 0rem;
+    color: var(--secondary);
+}
+
+.title span{
+   color:  var(--primary);
+}
+
+.position{
+    margin:  1.5rem 0rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.description{
+    font-weight: 400;
+    color: var(--text);
+    margin-bottom: 1rem;
+}
+
+.welcome-right img{
+    width:  100%;
+    animation-name: fadeInRight;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+    @-webkit-keyframes fadeInRight {
+    0% {
+            opacity: 0;
+            transform: translate3d(100%, 0, 0);
+            }
+            100% {
+            opacity: 1;
+            transform: none;
+            }
+            }
+            @keyframes fadeInRight {
+            0% {
+            opacity: 0;
+            transform: translate3d(100%, 0, 0);
+            }
+            100% {
+            opacity: 1;
+            transform: none;
+            }
+    } 
+  
+
+
+    /* Welcome Area End */
+    /* Dream Area Start Here */
+        .dream-area{
+            padding: 4rem 0rem;
+            background: url(images/dream-bg.png);
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+        .dream-wrapper{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+
+        .dream-left{
+            width: 50%;
+            animation-name: fadeInLeft;
+            animation-duration: 1s;
+            animation-delay: 2s;
+            animation-fill-mode: both;
+        }
+        .dream-right{
+            width: 50%;
+            padding:  2rem;
+            animation-name: fadeInRight;
+            animation-duration: 1s;
+            animation-delay: 2s;
+            animation-fill-mode: both;
+        }
+
+        .dream-title{
+            font-size: 3rem;
+            font-weight: 400;
+            margin: 1.5rem 0rem;
+            color: var(--secondary);
+        }
+    /* Dream Area Ends Here */
+
+    /* Experiences Area start here */
+    .experiences-area{
+        background: url(images/exp-bg.png);
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+    .experience-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .ex-box {
+        border: 1px solid #000;
+        margin: 2rem;
+        width: 50%;
+        padding: 2rem;
+        box-shadow: 5px 7px 25px gray;
+        animation-name: zoomIn;
+        animation-duration: 1s;
+        animation-delay:  3s;
+        animation-fill-mode: both;
+    }
+
+        @-webkit-keyframes zoomIn {
+                0% {
+                opacity: 0;
+                transform: scale3d(.3, .3, .3);
+                }
+                50% {
+                opacity: 1;
+                }
+                }
+                @keyframes zoomIn {
+                0% {
+                opacity: 0;
+                transform: scale3d(.3, .3, .3);
+                }
+                50% {
+                opacity: 1;
+                }
+        } 
+
+
+
+
+
+
+
+    .ex-head{
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--secondary);
+        margin: 1rem 0rem;
+    }
+
+    .ex-2nd-head{
+        color: var(--primary);
+        margin:  0.8rem 0;
+    }
+
+    .ex-right{
+        border-left: 7px solid;
+        border-image: linear-gradient(180deg, blue, cyan);
+        border-image-slice: 100%;
+        border-image-slice: 1;
+        height: 21.25rem;
+    }
+
+    .ex-left{
+        border-left: 7px solid;
+        border-image: linear-gradient(180deg, blue, cyan);
+        border-image-slice: 100%;
+        border-image-slice: 1;
+        
+    }
+
+    /* Experiences Area ends here */
+
+    /* Footer Area */
+
+    footer{
+        padding: 1rem 0;
+        box-shadow:  2px 3px 4px var(--text);
+    }
+
+    footer p{
+        text-align: center;
+    }
+  
+
+
+
+
+
